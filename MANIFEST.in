@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include openvpnmon/base/static *
+recursive-include openvpnmon/base/templates *
+recursive-include openvpnmon/templates *

@@ -5,3 +5,5 @@ extras/easy-rsa/keys
 *.log
 *.swp
 vars
+build/*
+openvpnmon.egg-info/*

@@ -36,7 +36,7 @@ Quick start
   url(r'^openvpnmon/', include('openvpnmon.urls'))
 ```
 
-3. Run `python manage.py migrate` to create myblog's models.
+3. Run `python manage.py migrate` to create openvpnmon models.
 
 4. Run the development server and access to manage openvpnmon `http://127.0.0.1:8000/openvpnmon/`.
 
