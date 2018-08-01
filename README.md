@@ -22,18 +22,17 @@ Quick start
 -----------
 
 1. Add "openvpnmon" to INSTALLED_APPS:
-  INSTALLED_APPS = {
+  `INSTALLED_APPS = {
   ...
   'openvpnmon'
-  }
+  }`
 
 2. Include the myblog URLconf in urls.py:
-  url(r'^openvpnmon/', include('openvpnmon.urls'))
+  `url(r'^openvpnmon/', include('openvpnmon.urls'))`
 
 3. Run `python manage.py migrate` to create myblog's models.
 
-4. Run the development server and access http://127.0.0.1:8000/openvpnmon/ to
+4. Run the development server and access `http://127.0.0.1:8000/openvpnmon/` to
 manage openvpnmon.
 
-#5. Access http://127.0.0.1:8000/myblog/ to view a list of most recent posts.
 
