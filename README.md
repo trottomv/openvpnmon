@@ -21,20 +21,20 @@ It includes easy-rsa which is free software made by OpenVPN technologies Inc. <s
 Quick start
 -----------
 
-1. Add "openvpnmon" to INSTALLED_APPS:
+1. Add "openvpnmon" to INSTALLED_APPS in `settings.py`:
 
-::
-
+```
   INSTALLED_APPS = {
   ...
   'openvpnmon'
   }
+```
 
-2. Include the myblog URLconf in urls.py:
+2. Include the myblog URLconf in `urls.py`:
 
-::
-
+```
   url(r'^openvpnmon/', include('openvpnmon.urls'))
+```
 
 3. Run `python manage.py migrate` to create myblog's models.
 
