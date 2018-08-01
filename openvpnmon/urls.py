@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 
-from base import views as base_views
+#from base import views as base_views
 from openvpnmon.base import views as base_views
 from django.conf import settings
 
