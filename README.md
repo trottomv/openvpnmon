@@ -20,6 +20,11 @@ It includes easy-rsa which is free software made by OpenVPN technologies Inc. <s
 
 Quick start
 -----------
+0. Install from pip:
+
+```
+  pip install git+https://github.com/trottomv/openvpnmon.git
+```
 
 1. Add "openvpnmon" to INSTALLED_APPS in `settings.py`:
 
