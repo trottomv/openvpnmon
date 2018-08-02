@@ -26,14 +26,13 @@ Quick start
   pip install git+https://github.com/trottomv/django-openvpnmon.git
 ```
 
-2. Add "openvpnmon" to INSTALLED_APPS in `settings.py`:
+2. Add the follow lines in `settings.py`:
 
 ```
   from django.conf.urls import include
 
   INSTALLED_APPS = {
   ...
-  'openvpnmon',
   'openvpn_base',
   'openvpn_mon',
   }
@@ -49,7 +48,7 @@ Quick start
 4. Download `extras` directory on your `../your/django-project/`: (if you have `svn` installed)
 
 ```
-  svn export https://github.com/trottomv/openvpnmon.git/trunk/extras
+  svn export https://github.com/trottomv/django-openvpnmon.git/trunk/extras
 ```
 5. In your `settings.py` insert this follow lines:
 
