@@ -1,12 +1,12 @@
 from django.conf.urls import url
 from django.contrib import admin
 
-from base import views as base_views
+from openvpn_base import views as base_views
 from django.conf import settings
 
 urlpatterns = [
     url(r'^%s$' % settings.URL_PREFIX, base_views.index),
-    url(r'^%sadmin/' % settings.URL_PREFIX, admin.site.urls),
+    #url(r'^%admin/' % settings.URL_PREFIX, admin.site.urls),
     url(r'^%sdisplay_certs/' % settings.URL_PREFIX,
         base_views.display_certs,
         name="display-certs"),
