@@ -6,4 +6,6 @@ extras/easy-rsa/keys
 *.swp
 vars
 build/*
+django-openvpnmon/build/*
 openvpnmon.egg-info/*
+django-openvpnmon/openvpnmon.egg-info/*

@@ -1,7 +1,7 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
  
-README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
   
 #Allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -9,7 +9,8 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
   name = 'openvpnmon',
   version = '0.9',
-  packages = ['openvpnmon'],
+  #packages = ['base', 'mon', 'templates'],
+  packages = find_packages(),
   include_package_data = True,
   license = 'GNU AGPL License',
   description = 'OpenVPNmon is a web interface OpenVPN configurator.',
