@@ -7,4 +7,4 @@ recursive-include mon *
 recursive-include base/static *
 recursive-include base/templates *
 recursive-include templates *
-recursive-include extras *
+#recursive-include extras *
