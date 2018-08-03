@@ -23,27 +23,31 @@ Quick start
 1. Install from pip:
 
 ```
-  pip install git+https://github.com/trottomv/openvpnmon.git
+  pip install git+https://github.com/trottomv/django-openvpnmon.git
 ```
 
-2. Add "openvpnmon" to INSTALLED_APPS in `settings.py`:
+2. Add the follow lines in `settings.py`:
 
 ```
+  from django.conf.urls import include
+
   INSTALLED_APPS = {
   ...
-  'openvpnmon'
+  'openvpn_base',
   }
 ```
 
-3. Include the myblog URLconf in `urls.py`:
+3. Include the openvpnmon URLconf in `urls.py`:
 
 ```
+  from django.conf.urls import include
+
   url(r'^openvpnmon/', include('openvpnmon.urls'))
 ```
 4. Download `extras` directory on your `../your/django-project/`: (if you have `svn` installed)
 
 ```
-  svn export https://github.com/trottomv/openvpnmon.git/trunk/extras
+  svn export https://github.com/trottomv/django-openvpnmon.git/trunk/extras
 ```
 5. In your `settings.py` insert this follow lines:
 
