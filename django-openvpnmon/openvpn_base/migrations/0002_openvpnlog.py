@@ -7,6 +7,7 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('openvpn_base', '0001_initial'),
     ]
 
     operations = [
